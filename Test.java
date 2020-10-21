@@ -31,7 +31,7 @@ public class Test {
         System.out.println("------------------------");
         System.out.println("Part d");
         HTMLFilteredReader d = new HTMLFilteredReader("http://www.cs.bilkent.edu.tr/~ozturk/cs102/scrapethissite.html");
-        //System.out.println("Contents: " + d.getPageContents2());
+        System.out.println("Contents: " + d.getPageContents());
         //System.out.println(d.getUnfilteredPageContents());
         
         System.out.println("------------------------");

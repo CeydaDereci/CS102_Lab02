@@ -17,11 +17,10 @@ public class HTMLFilteredReader extends MySimpleURLReader {
     /**
      * @return String content without htlm codes
      */
-    public String getPageContents2(){
+    public String getPageContents(){
        String content;
        content = getUnfilteredPageContents();
        content = content.replaceAll("\\<.*?\\>", "");
-       System.out.println("After removing HTML Tags: " + content);
        return content;
     }
 
@@ -30,7 +29,7 @@ public class HTMLFilteredReader extends MySimpleURLReader {
      */
     public String getUnfilteredPageContents(){
        String content;
-       content = getPageContents();
+       content = super.getPageContents();
        return content;
 
     }

@@ -12,7 +12,7 @@ public class WordSearch extends HTMLFilteredReader {
    
    public String wordSearch(){
       String text;
-      text = getPageContents2();
+      text = getPageContents();
       String word;
       System.out.println("Enter the word: ");
       word = scan.nextLine();
