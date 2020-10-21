@@ -1,0 +1,47 @@
+import cs1.SimpleURLReader;
+/**
+ *
+ * @author Ceyda Dereci
+ * @since 22.10.2020
+ */
+public class Test {
+    public static void main(String[] args){
+
+        //part a
+        cs1.SimpleURLReader a = new SimpleURLReader("http://www.cs.bilkent.edu.tr/~ozturk/cs102/housman.txt");
+        
+        System.out.println("------------------------");
+        System.out.println("Part a");
+        System.out.println("Line count: " + a.getLineCount() + "\n");
+        System.out.println("Contents: " + a.getPageContents());
+        
+        
+        //part b
+        System.out.println("------------------------");
+        System.out.println("Part b");
+        MySimpleURLReader b = new MySimpleURLReader("https://scrapethissite.com/pages/simple");
+        System.out.println(b.getURL());
+        System.out.println(b.getName());
+        
+        System.out.println("------------------------");
+        System.out.println("Part c");
+        System.out.println(b.getNumberOfCSSLinks());
+        
+        System.out.println("------------------------");
+        System.out.println("Part d");
+        HTMLFilteredReader d = new HTMLFilteredReader("https://scrapethissite.com/pages/simple/");
+        System.out.println(d.getPageContents());
+        
+        System.out.println("------------------------");
+        System.out.println("Part e");
+        System.out.println("");
+        
+        System.out.println("------------------------");
+        System.out.println("Part f");
+        System.out.println("");
+        
+        System.out.println("------------------------");
+        System.out.println("Part e");
+        System.out.println("");
+    }
+}

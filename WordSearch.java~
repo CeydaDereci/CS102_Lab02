@@ -1,0 +1,32 @@
+import java.util.Scanner;
+/**
+ * Auto Generated Java Class.
+ */
+public class WordSearch extends HTMLFilteredReader {
+   
+   protected String url;
+   Scanner scan = new Scanner(System.in);
+   
+   public WordSearch() { 
+      super(url);
+      this.url = url;  
+   }
+   
+   public String wordSearch(){
+      String text;
+      text = getPageContents2();
+      String word;
+      System.out.println("Enter the word: ");
+      word = scan.nextLine();
+      
+      for(int i = 0; i < text.length(); i++){
+         
+      
+      
+      
+      
+      }
+      return "";
+   }
+   
+}

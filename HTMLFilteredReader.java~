@@ -1,0 +1,29 @@
+/**
+ *
+ * @author Ceyda Dereci
+ * @since 22.10.2020
+ */
+public class HTMLFilteredReader extends MySimpleURLReader {
+
+    protected String url;
+
+    public HTMLFilteredReader(String url){
+        super(url);
+    }
+
+
+    public String getPageContents(){
+        return "";
+    }
+
+    /**
+     * @return String
+     */
+    public String getUnfilteredPageContents(){
+
+        return "";
+
+    }
+
+
+}
