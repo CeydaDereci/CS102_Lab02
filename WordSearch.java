@@ -10,22 +10,26 @@ public class WordSearch extends HTMLFilteredReader {
       super(url);
    }
    
-   public String wordSearch(){
+   public void wordSearch(){
       String text;
       text = getPageContents();
+      
       String word;
       System.out.println("Enter the word: ");
       word = scan.nextLine();
-      String display;
-      display = "";
-      int index;
-      index = 0;
       
-      while ((index = text.indexOf(word, index)) != -1 ){
-         display = word + " " + index;
-         index++;
-      }
-      return display;
+      int index;
+      index = text.indexOf(word);
+      
+//      int count;
+//      count = 0;
+      
+//      for (int i = 0; i < index; i++){
+//         if(text.charAt(i) == '\n')
+//            count++; 
+//      }
+//       
+      System.out.println(word + " " + index);
    }
    
 }

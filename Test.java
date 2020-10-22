@@ -37,7 +37,7 @@ public class Test {
         System.out.println("------------------------");
         System.out.println("Part e");
         WordSearch e = new WordSearch("http://www.cs.bilkent.edu.tr/~ozturk/cs102/scrapethissite.html");
-        System.out.println(e.wordSearch());
+        e.wordSearch();
         
         
         
