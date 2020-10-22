@@ -45,7 +45,7 @@ public class MySimpleURLReader extends cs1.SimpleURLReader {
       numberOfCss = 0;
       str = getPageContents();
       index = 0;
-      while ((index = str.indexOf("<link", index)) != -1 ){
+      while ((index = str.indexOf("stylesheet", index)) != -1 ){
          numberOfCss++;
          index++;
       }

@@ -6,11 +6,8 @@ import cs1.SimpleURLReader;
  */
 public class HTMLFilteredReader extends MySimpleURLReader {
 
-    protected String url;
-
     public HTMLFilteredReader(String url){
         super(url);
-        this.url = url;  
     }
 
     
