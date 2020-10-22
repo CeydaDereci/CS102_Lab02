@@ -44,10 +44,12 @@ public class MySimpleURLReader extends cs1.SimpleURLReader {
       int numberOfCss;
       numberOfCss = 0;
       str = getPageContents();
-      index = 0;
-      while ((index = str.indexOf("stylesheet", index)) != -1 ){
-         numberOfCss++;
-         index++;
+      index = str.indexOf("<link");
+      while (index >= 0){
+         String substring = str.substring(index,str.indexOf(">", index+1));
+         if(substring.indexOf(".css") != -1)
+            numberOfCss ++;
+         index = super.getPageContents().indexOf("<link", index+1);
       }
       return numberOfCss;
       
